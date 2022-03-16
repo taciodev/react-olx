@@ -1,4 +1,5 @@
 import { useRoutes } from 'react-router-dom';
+import RouteHandler from './components/RouteHandler';
 import  Home from './pages/Home';
 import About from './pages/About';
 import SignIn from './pages/SignIn';
@@ -13,6 +14,11 @@ const Routes = () => {
     {path: '/signin', element: <SignIn /> },
     {path: '/signup', element: <SignUp /> },
     {path: '/ad/:id', element: <AdPage /> },
+    {path: '/post-an-ad', element:
+      <RouteHandler>
+        <About />
+      </RouteHandler>
+    },
     {path: '*', element: <NotFound /> }
   ]);
 }
