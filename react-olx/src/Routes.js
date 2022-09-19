@@ -5,6 +5,7 @@ import About from './pages/About';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import AdPage from './pages/AdPage';
+import AddAd from "./pages/AddAd";
 import NotFound from './pages/NotFound';
 
 const Routes = () => {
@@ -16,7 +17,7 @@ const Routes = () => {
     {path: '/ad/:id', element: <AdPage /> },
     {path: '/post-an-ad', element:
       <RouteHandler>
-        <About />
+        <AddAd />
       </RouteHandler>
     },
     {path: '*', element: <NotFound /> }

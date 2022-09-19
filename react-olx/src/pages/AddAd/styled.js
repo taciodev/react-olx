@@ -28,7 +28,9 @@ export const PageArea = styled.div`
           width: auto;
         }
 
-        input {
+        input,
+        select,
+        textarea {
           width: 100%;
           font-size: 14px;
           padding: 5px;
@@ -40,6 +42,11 @@ export const PageArea = styled.div`
             border: 1px solid #333;
             color: #333;
           }
+        }
+
+        textarea {
+          height: 150px;
+          resize: none;
         }
 
         button {
